@@ -36,6 +36,6 @@ public class TestPeopleList {
     public void testReadAndWrite(){
         list.writeToFile();
         list.readFromFile();
-        assertEquals(2,list.getNoOfPeople());
+        assertEquals(1,list.getNoOfPeople());
     }
 }

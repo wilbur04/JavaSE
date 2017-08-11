@@ -26,6 +26,15 @@ public class TestLibrary {
         assertEquals(1,lib.getListOfPeopleSize());
     }
 
+    @Test
+    public void testReadWrite(){
+        lib.write();
+        lib.read();
+        assertEquals(1,lib.getListOfItemSize());
+        assertEquals(1,lib.getListOfPeopleSize());
+
+    }
+
 
 
 

@@ -1,0 +1,13 @@
+Book, title, publication, 100, 0, 4, 400, true
+Book, tytryte, pharry, 100, 0, 4, 400, true
+Journal, tuue, pjenking, 100, 0, 4, 400, true
+Book, tuyrle, holu, 100, 0, 4, 400, true
+Book, edgdge, publicv, 100, 0, 4, 400, true
+Magazine, gf, dgn, 100, 0, 4, 400, true
+Book, kffhle, pugf, 100, 0, 4, 400, true
+Book, gjhe, yytion, 100, 0, 4, 400, true
+Magazine, hhhhhhhhhhhhhe, pyryion, 100, 0, 4, 400, true
+Book, the, puyryion, 100, 0, 4, 400, true
+Book, trhle, puyrtion, 100, 0, 4, 400, true
+
+

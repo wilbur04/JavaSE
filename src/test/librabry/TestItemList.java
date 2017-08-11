@@ -52,7 +52,7 @@ public class TestItemList {
     public void testReadAndWrite(){
         list.writeToFile();
         list.readFromFile();
-        assertEquals(2,list.getNoOfItems());
+        assertEquals(1,list.getNoOfItems());
     }
 
 
