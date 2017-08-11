@@ -12,39 +12,46 @@ public class PrimeOne {
     public static void main (String [] args){
 
         long start = System.nanoTime();
-        //pimeOne();
-        pimeTwo();
+        pimeOne();
         long elapsedTime = System.nanoTime() - start;
-        System.out.println("it took you "+ elapsedTime+" nano seconds");
+        System.out.println("it took you "+ elapsedTime+" nano seconds prime1");
         System.out.println(listOne.size()+8);
+
+/*
+        long start2 = System.nanoTime();
+        pimeTwo();
+        long elapsedTime2 = System.nanoTime() - start2;
+        System.out.println("it took you "+ elapsedTime2+" nano seconds in prime2");
+        System.out.println(listOne.size()+8);
+ */
     }
 
     private static void pimeOne(){
+        listOne.add(2);
+        listOne.add(3);
+        listOne.add(5);
+        listOne.add(7);
+        listOne.add(11);
+        listOne.add(13);
+        listOne.add(17);
 
-        listOne.add(23);
-
-        int size = 1;
+        int size = 8;
         int count ;
 
-        for (int x=27; x <1000000000 ; x+=2){
+        for (int x=19; x <3000000 ; x+=2){
             count =0;
-            if (x%3==0|| x%5==0 || x%7 ==0 || x%11 ==0|| x%13==0|| x%17==0|| x%19==0 ) {
-                continue;
-            } else{
-                for (int i =0 ; i < size; i++) {
-                    // todo use while loop
-                    if ( x % listOne.get(i) == 0){
-                        count++;
-                        break;
-                    } if (listOne.get(i) > Math.sqrt(x)){
-                        break;
-                    }
-
-                } if (count == 0) {
-                    listOne.add(x);
-                    size++;
+            for (int i =0 ; i < size; i++) {
+                if ( x % listOne.get(i) == 0){
+                    count++;
+                    break;
+                } if (listOne.get(i) > Math.sqrt(x)){
+                    break;
                 }
+            } if (count == 0) {
+                listOne.add(x);
+                size++;
             }
+
         }
     }
 
@@ -57,7 +64,7 @@ public class PrimeOne {
         int count ;
         int i = 0;
 
-        for (int x=27; x <1000000 ; x+=2){
+        for (int x=27; x <1000000000 ; x+=2){
             count =0;
             if (x%3==0|| x%5==0 || x%7 ==0 || x%11 ==0|| x%13==0|| x%17==0|| x%19==0 ) {
                 continue;
