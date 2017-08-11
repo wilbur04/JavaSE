@@ -1,4 +1,4 @@
-
+package paint;
 public class Paint {
     private String name;
     private double price;

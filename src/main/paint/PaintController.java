@@ -1,3 +1,4 @@
+package paint;
 
 import java.util.ArrayList;
 

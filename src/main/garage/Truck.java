@@ -1,4 +1,4 @@
-
+package garage;
 public class Truck extends Vehicle {
     private double bedLength;
     private double bedWidth;

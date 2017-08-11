@@ -1,4 +1,4 @@
-
+package garage;
 public class Bike extends Vehicle {
     private boolean hasSidecar;
     protected Bike(String brand, String modelName, int modelYear) {

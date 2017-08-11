@@ -1,4 +1,4 @@
-
+package garage;
 public class GarageControls {
 
 

@@ -1,4 +1,4 @@
-
+package garage;
 public abstract class Vehicle {
 
     private String brand;
