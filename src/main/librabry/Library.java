@@ -1,10 +1,7 @@
 package librabry;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
-import static java.lang.Integer.parseInt;
 
 public class Library {
 
@@ -36,6 +33,16 @@ public class Library {
         } else if (o instanceof Item){
             listofItems.add(o);
         }
+    }
+
+    public void write(){
+        listOfPeople.writeToFile();
+        listofItems.writeToFile();
+    }
+
+    public void read(){
+        listofItems.readFromFile();
+        listOfPeople.readFromFile();
     }
 
 

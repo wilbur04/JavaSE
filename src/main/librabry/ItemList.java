@@ -54,6 +54,7 @@ public class ItemList implements AddRemove {
     @Override
     public void readFromFile() {
 
+        listofItems.clear();
         try {
             br = new BufferedReader((new FileReader("item.txt")));
             String line = "";

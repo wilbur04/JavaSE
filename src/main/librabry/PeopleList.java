@@ -50,6 +50,7 @@ public class PeopleList implements AddRemove {
     @Override
     public void readFromFile() {
 
+        listOfPeople.clear();
         try {
             br = new BufferedReader((new FileReader("people.txt")));
             String line = "";
