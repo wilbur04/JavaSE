@@ -1,0 +1,4 @@
+rhys, 21, BufferedReader
+amrit, 21, Reader
+Ayaz, 20, singer
+sean, 20, bufferWriter

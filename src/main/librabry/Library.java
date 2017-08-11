@@ -1,9 +1,6 @@
 package librabry;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +12,7 @@ public class Library {
     private PeopleList listOfPeople;
     private ItemList listofItems;
     BufferedReader br, br2;
+    BufferedWriter bw ,bw2;
 
     public Library(String name){
         this.name=name;
@@ -41,20 +39,6 @@ public class Library {
     }
 
 
-    public  void ReadFromFile(){
-        try {
-            br = new BufferedReader((new FileReader("people.txt")));
-            br2 = new BufferedReader((new FileReader("items.txt")));
-            String line = "";
-            while ( (line = br.readLine()) != null){
-                String[] sc = line.split(", ");
-                listOfPeople.add(new Member(sc[0],new Address(parseInt(sc[1]), sc[2]),parseInt(sc[3])));
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-    }
+
 }
